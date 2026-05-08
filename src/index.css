@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 97%;
+    --foreground: 20 15% 15%;
+
+    --card: 30 15% 95%;
+    --card-foreground: 20 15% 15%;
+
+    --popover: 30 20% 97%;
+    --popover-foreground: 20 15% 15%;
+
+    --primary: 350 30% 45%;
+    --primary-foreground: 30 20% 97%;
+
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 20 15% 25%;
+
+    --muted: 30 10% 93%;
+    --muted-foreground: 20 8% 50%;
+
+    --accent: 350 20% 90%;
+    --accent-foreground: 350 30% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 350 30% 45%;
+
+    --radius: 0.5rem;
+
+    --rose-warm: 350 30% 45%;
+    --rose-light: 350 25% 92%;
+    --rose-glow: 350 35% 55%;
+    --cream: 30 20% 97%;
+    --cream-dark: 30 15% 92%;
+    --charcoal: 20 15% 15%;
+    --charcoal-light: 20 8% 50%;
+
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
